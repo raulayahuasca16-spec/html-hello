@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <form class="d-flex" role="search">
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Create new post
+                </button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="post-caption" class="form-label">Caption:</label>
+                                    <textarea class="form-control" id="post-caption" rows="2"
+                                        placeholder="Add the caption of your post here"></textarea>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-light border"><i class="fa-solid fa-camera"></i></i></button>
+                                    <button class="btn btn-light border"><i
+                                            class="fa-solid fa-location-dot"></i></i></button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-success dropdown-toggle me-2 px-3" type="button" id="settingsDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="settingsDropdown">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+
+
+            </form>
+        </div>
+    </nav>
+
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <i class="fa-solid fa-table-cells"></i>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <i class="fa-solid fa-square"></i>
+            </button>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="//img2.wallspic.com/previews/5/9/0/4/7/174095/174095-caricatura-arte-ilustracion-de_dibujos_animados-anime-500x.jpg"
+                            alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="https://sm.ign.com/t/ign_es/slotter/default/animes-2023_3xz9.800.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="https://www.tuexperto.com/wp-content/uploads/2022/02/25-fondos-de-pantalla-para-pc-de-anime-21-1200x675.jpg.webp"
+                            alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="https://play-lh.googleusercontent.com/nJaTv85WGzfAAH8sggzYfpasQP_-LUKOo6VhVOjeyRo79qnQXE4benCKK_2QbmzszbM"
+                            alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="https://i.pinimg.com/736x/2b/71/f6/2b71f6d0c9391df0bff54ee8f56e5b2b.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh-1dvmxjlbZAL_rgNRPEbMf7wXXr0L3UIog&s"
+                            alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="https://applescoop.org/image/wallpapers/iphone/super-saiyan-blue-anime-cartoons-best-4k-iphone-and-6k-android-desktop-5k-8k-lock-screen-home-screen-wallpapers-backgrounds-and-screensavers-2025-24-03-2025-1742841496-hd-wallpaper.jpg"
+                            alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="https://media.livewallpapers.com/images/high/anime-warrior-power-aura-1.webp" alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="w-100 h-100 object-fit-cover"
+                            src="https://e1.pxfuel.com/desktop-wallpaper/208/900/desktop-wallpaper-1920x1080-anime-ultra-anime.jpg"
+                            alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="d-flex flex-column align-items-center gap-3 py-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">Kimetsu no yaiba 1/10</div>
+                    <img class="w-100 h-100 object-fit-cover"
+                        src="//img2.wallspic.com/previews/5/9/0/4/7/174095/174095-caricatura-arte-ilustracion-de_dibujos_animados-anime-500x.jpg"
+                        alt="" />
+                    <div class="card-body">
+                        <p class="card-text">Likes ------- Akaza tu pelicula es peor que la mia.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">Satoru 2/10</div>
+                    <img class="w-100 h-100 object-fit-cover"
+                        src="https://sm.ign.com/t/ign_es/slotter/default/animes-2023_3xz9.800.jpg" alt="" />
+                    <div class="card-body">
+                        <p class="card-text">Likes ------- Soy el boss.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">Luffy Gear 2 3/10</div>
+                    <img class="w-100 h-100 object-fit-cover"
+                        src="https://www.tuexperto.com/wp-content/uploads/2022/02/25-fondos-de-pantalla-para-pc-de-anime-21-1200x675.jpg.webp"
+                        alt="" />
+                    <div class="card-body">
+                        <p class="card-text">Likes ------- 20 años de esa pose.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">Itachi 4/10</div>
+                    <img class="w-100 h-100 object-fit-cover"
+                        src="https://play-lh.googleusercontent.com/nJaTv85WGzfAAH8sggzYfpasQP_-LUKOo6VhVOjeyRo79qnQXE4benCKK_2QbmzszbM"
+                        alt="" />
+                    <div class="card-body">
+                        <p class="card-text">Likes ------- La muerte más dolorosa por el bien de la trama.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">Boruto 5/10</div>
+                    <img class="w-100 h-100 object-fit-cover"
+                        src="https://i.pinimg.com/736x/2b/71/f6/2b71f6d0c9391df0bff54ee8f56e5b2b.jpg" alt="" />
+                    <div class="card-body">
+                        <p class="card-text">Likes ------- Tu anime es relleno.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">Sukuna</div>
+                    <img class="w-100 h-100 object-fit-cover"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh-1dvmxjlbZAL_rgNRPEbMf7wXXr0L3UIog&s"
+                        alt="" />
+                    <div class="card-body">
+                        <p class="card-text">Likes ------- Another boss.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">Vegeta</div>
+                    <img class="w-100 h-100 object-fit-cover"
+                        src="https://applescoop.org/image/wallpapers/iphone/super-saiyan-blue-anime-cartoons-best-4k-iphone-and-6k-android-desktop-5k-8k-lock-screen-home-screen-wallpapers-backgrounds-and-screensavers-2025-24-03-2025-1742841496-hd-wallpaper.jpg"
+                        alt="" />
+                    <div class="card-body">
+                        <p class="card-text">Likes ------- Soy el príncipe saiyan.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">Goku</div>
+                    <img class="w-100 h-100 object-fit-cover"
+                        src="https://media.livewallpapers.com/images/high/anime-warrior-power-aura-1.webp" alt="" />
+                    <div class="card-body">
+                        <p class="card-text">Likes ------- Me dan miedo las agujas.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">Berserk</div>
+                    <img class="w-100 h-100 object-fit-cover"
+                        src="https://e1.pxfuel.com/desktop-wallpaper/208/900/desktop-wallpaper-1920x1080-anime-ultra-anime.jpg"
+                        alt="" />
+                    <div class="card-body">
+                        <p class="card-text">Likes ------- Nunca habrá mejor anime que el mío y está sin terminar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
