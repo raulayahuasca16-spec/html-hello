@@ -1,0 +1,10 @@
+.form-control, 
+.form-select, 
+.input-group-text {
+    border: 1px solid #999;
+}
+
+.custom-card-container {
+    border: 1px solid #888 !important;
+    background-color: #333;
+}
